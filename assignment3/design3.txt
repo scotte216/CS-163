@@ -1,0 +1,53 @@
+Scott Ewing
+CS 163
+Assignment 3
+Design Document
+
+I found this to be a challenging but rewarding program. The way I constructed my
+program was to have each course be an object. This object would then contain
+course details as well as a linear linked list to all the section information.
+This seemed appropriate since each section has the same basic course
+information, but there could be any number of sections for each course. 
+
+Each course object also handles several functions including adding and removing
+sections, as well as displaying course/section information or copying
+course/section information. I found this to be an effective way of organizing my
+course data, though I think given more time I could have impliemented the
+functions more elegantly. 
+
+On top of all of this is the Hash Table. The Hash Table creates an array of
+pointers to a type node. These nodes then hold course pointers. Whenever there
+is a collision, a new node (with a new class) would be added to the front of
+this LLL extending from the hash table. With the way my courses were set up, it
+was easy to avoid colision because one Course could hold information for a large
+number of sections. In my courses.txt file I created 4 course with 3 sections
+each. In total this only created 4 courses and with a hash table of size 5,
+there were no colisions.
+
+However, my original hash function was not very good. It was making all 4 of
+these classes collide and chain off of one index from the hash table. I had to
+fiddle a little bit with the function until I found something that would work
+well. Knowing that each class would start with XX ### Y where X is something
+like CS, ### is something like 162, and Y is the first letter of the rest of the
+course (I for Introduction to Computer Science) I found that these 8 characters
+were sufficient to get unique results from the hash function. 
+
+ When implimenting this program I finally made sure to use recursive functions
+ for the removal of various nodes withing the hash table and course structure
+ which simplified things greatly. If I had more time I would have continued to
+ build my proficiency with the recursive functions for other aspects of the
+ program, like adding nodes.
+
+ I found myself having some difficulty knowing when a certain module of my
+ program could have access to private data members and when it couldn't, which
+ lead to several cases where the main program called the hash table, and the
+ hash table called the course objects when I wanted to determine something from
+ a top level. This wasn't bad, but it lead to me making lots of little functions
+ to handle different checks. There was likely some redundancy or there are
+ probably simpler ways to implimement some of these functions.
+
+ Overall I was relatively pleased with how the program turned out. I didn't
+ start out with the data structure I eventually ended up using but was grateful
+ that I went back and changed things. By writing the various parts modularly to
+ begin with it was relatively easy to make large changes to the underlying
+ data, which was a pleasant surprise.

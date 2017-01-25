@@ -1,0 +1,12 @@
+CS 162 Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|3|In-class course, Tuesday and Thursday at 8:00 AM.
+CS 162 Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|2|In-class course, Tuesday and Thursday at 10:00 AM.
+CS 162 Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|1|Online course, completed at your own pace thorugh Desire2Learn
+CS 163 Data Structures|Data abstraction with formal specification.|3|In-class course, Monday and Wednesday, 8:00 AM
+CS 163 Data Structures|Data abstraction with formal specification.|2|In-class course, Monday and Wednesday, 10:00 AM 
+CS 163 Data Structures|Data abstraction with formal specification.|1|Online course, completed at your own pace thorugh Desire2Learn
+CS 202 Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|3|Tuesday and Thursday at 1:00 PM
+CS 202 Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|2|Tuesday and Thursday at 3:00 PM
+CS 202 Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|1|Online course, completed at your own pace thorugh Desire2Learn
+CS 201 Computer Systems Programming|Introduction to computer systems from a software perspective.|3|Tuesdays at 6 PM
+CS 201 Computer Systems Programming|Introduction to computer systems from a software perspective.|2|Thursdays at 6 PM
+CS 201 Computer Systems Programming|Introduction to computer systems from a software perspective.|1|Online course, completed at your own pace thorugh Desire2Learn

@@ -1,0 +1,68 @@
+Scott Ewing
+CS 163
+Assignment 2
+Design write-up
+
+Filename:
+design2.txt
+
+
+This assignment tasked us with creating 2 ADTs for an email program. For this we
+were required to create a Stack for the main inbox and a Queue for the the 'VIP'
+inbox. Along with this, the email were imported from a text file to simulate the
+existance of a set of email, rather than just entering them one by one. 
+
+I didn't find that these types of data structures were particularly useful for
+this application. For a real inbox you would want to read any email in any
+order, not just the email that is the top of the Stack. Also you would like to
+delete or move these emails from anywhere in the list, and again, not just from
+the top of a Stack. It made the inbox perform oddly, and now how someone would
+expect. In my implimentation of the Inbox, the only way to add an email to the
+VIP inbox (queue) was to view it from the stop of the stack, then decide if it
+was to be deleted, THEN decided if was worth being on the VIP list and
+enqueueing it. I chose this logic because if a user could view an item from the
+stack and enqueue it in the VIP inbox without deleting it, they could add the
+same email multiple times and create duplicates. 
+
+The VIP Inbox was created with using a Queue. Again, this felt odd and didn't
+perform as one would expect. Like the stack, the queue only allowed the user to
+view the front email or all the emails. Not browse through the emails and
+reading them as they pleased. Also, a user couldn't delete any VIP emails unless
+it was at the front of the queue. It would have been possible to change my
+implimentation such that a user could read the first letter, dequeue it, then
+requeue it to simulate going through the list, reading one by one, without
+losing any emails. This behavior wouldn't be possible on the stack. The entire
+stack would need to be rebuilt several times to simulate this action for
+something that should be simple. 
+
+If I were building these inboxes from scratch (based on the ADTs I'm familiar
+with) I would probably use a standard linear linked list for each. This would
+allow for easy copying, inserting, deleting, and re-ordering of lists as
+desired. Based on what I know of a hash table, this wouldn't be a good
+implimentation because of the lack of ability to display them all easily. Though
+we briefly touched on some kind of new Hash table that would create both a hash
+table and a standard linear linked list out of the same data. But, it seemed
+like the standard linear link list (with a tail pointer) would be perfectly
+adequate for the job. 
+
+Ideally I wanted to have an option to prompt the user if each email was VIP
+during the importing function. Each email would be pulled off the text file,
+displayed to the user, and prompted for VIP. If yes, it would create both the
+regular Inbox and VIP Inbox at the same time. However, I also wanted to allow a
+user to read each email and decide if it was a VIP individually after loading
+them already. If both methods were used, it would allow for duplicate emails in
+the VIP inbox and I didn't think this seemed appropriate. 
+
+With more time, I could have implimented some kind of check to see if an email
+already existed on the VIP list, but it could have been challenging trying to
+find some key indicator that could be used to determine a duplicate. Also I
+could have added some kind of search feature to look for a specific email in
+either inbox. 
+
+Again, I didn't get a chance to make use of recursion, which I had planned on
+doing, but since we were using new data structures for the first time I didn't
+feel comfortable adding them. Also, Stacks and queues don't really seem like
+they benefit that greatly from recursive functions, since all the activity is
+happening at the head/front/top or tail. 
+
+

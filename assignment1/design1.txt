@@ -1,0 +1,53 @@
+Scott Ewing
+CS 163
+Assignment 1
+design1.txt
+
+Design Write-up
+
+I started writing this program over a week ago based mostly on the information I
+had learned in CS162. I found that after each lecture I wanted to revisit my
+work and rewrite the source code to something simpler, particularly after Lab 2.
+However, due to time considerations I didn't rewrite my code after Lab 2. In
+hindsite it would have been better to wait to impliment my code in a similar
+manner to that in Lab 2 where each piece of data was an object. In my code, each
+topic posting was a class containing a struct-based node. The code works well, 
+but I believe it would have been clearer and cleaner using the same type of data 
+structure in Lab 2. 
+
+This would have also forced me to get more familiar with passing data
+structures by reference, rather than just passing arguments. As data structures
+grow in size and complexity, it becomes less and less practical to pass
+arguments, since the argument list will become large and unwieldy. This work can 
+be passed off to a data structure that uses a class as the data stored within 
+the node. 
+
+Otherwise, speaking more broadly, my structure was a linear linked list with
+each node representing a topic. Then each of these topics had a pointer to
+another linear linked list, these containing each comment in the discussion
+thread. Once the underlying structure of the post comments was written
+(post.cpp), creating the structure and execution of the blog linear linked list
+(blog.cpp) was relatively straight forward. I found it very helpful to create
+the "deepest" or most basic component first (in this case, post.cpp/.h) and test
+it thoroughly. Then once I created the upper level (blog.cpp/.h) I was confident
+that the underlying data structure would work as expected. I intend to continue
+this practice moving forward, as I was able to isolate my thinking (and
+debugging efforts) to one component at a time.
+
+At this point I'm not familiar enough with the variety of data structures to 
+know if something else would have been more efficient, but that is likely the 
+case. A linear linked list of arrays (with datatype containing the post 
+information) might have been more efficient, assuming that a comment thread in 
+a blog wasn't going to get too much traffic. 
+
+Finally, if I had more time I would have tried to use more recursive functions
+as they seem to be more elegent for many common procedures in a Linear Linked
+List (of which I had 2). Although I can write them and feel relatively
+comfortable with them, whenever I start programming my first instinct is to use
+more procedural functions. Also, we haven't covered many wrapping functions when
+dealing with recursive functions in our assignments yet, so I don't have a solid
+understanding of how to deal with multiple cases (or shades of gray).
+
+Moving forward, I intend to make greater use of recursive functions and to not
+be afraid to start over on my assignments, or at least to revisit and update the
+work  when new information has been learned in class. 

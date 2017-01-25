@@ -1,0 +1,54 @@
+Scott Ewing
+CS 163
+Assignment 5
+
+filename: design5.txt
+
+For this assignment, we were instructed to use a graph ADT to model the behavior
+of a quiz. Each question was a vertex in the graph and the edges represented
+which question would follow, depending on how the user answered the question. I
+didn't find the Graph to be a particularly useful or intuative data structure
+for such an endeavor. Since the edges were represented the answers to the
+questions, our ADT added another layer of complexity, having to interpret the
+responses. In my previous career, I developed many surveys, and a good survey
+doesn't rely on much jumping around a questionaire based on previous answers. 
+
+What helped me was to think of the survey as more of a 'choose your own
+adveture.' Regardless, once I was able to design my ADT the programming went
+fairly smoothly. Each vertex was a question. Each node in the adjacency list was
+a possible response and a pointer to the next appropriate question. For example,
+if Question 1 was a Yes/No type of question, the nodes in the Question 1
+adjacency list would represent "Yes" and "No." When the ADT was prompted to
+display the question and answer, it would pull the question text from the
+Vertex, and the possible answers from the nodes in the adjacency list. When the
+user made a selection, such as 1 for yes or 2 for no, the ADT traversed the list
+the proper number of nodes (1 or 2 in this example) and found the pointer to the
+next question. Sometimes the answers could point to the same next question,
+which caused the program (in my implimentation) to create multiple nodes that
+all pointed to the same place -- which is inefficent.
+
+Implimenting the data structure itself was relatively straight-forward. I found
+the code to be simple and logical and easy to follow, unlike the Hash Table or
+BST. However, more work had to be done on the front-end to make the text files
+with the information properly formatted, particularly when thinking of how the
+edge-lists would be created. For example, the adjacency lists couldn't be
+created with my implimentation until the questions were created and entered into
+the adjacency list array. Because of this, I found it simplest to create 2 files
+to load. One for the questions and one for the adjacency lists. Ideally, both
+the questions and adjacency connection would be all contained in the same text
+file, but I didn't feel like I had the time to properly impliment such a
+scenario.
+
+Final notes, for some reason, it seems like every time I turn in an assignment
+that is working perfectly for me, the grader encounters an error that doesn't
+occur on my system. Also, I feel that the students should be given the grading
+rubric that the graders will be using on their assignments so there are no
+surprises. At this point, I feel like I just turn in an assignment and just hope
+I've managed to meet all the criteria that is being use, even though it's not
+detailed anywhere. The style sheet on D2L doesn't seem to be an accurate source
+of information. 
+
+Other than that, I've enjoyed this course and have felt that I've learned a lot.
+See you next quarter in 202!
+
+-Scott Ewing

@@ -1,0 +1,18 @@
+CS|162|Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|2|In-class course, Tuesday and Thursday at 10:00 AM.
+CS|202|Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|2|Tuesday and Thursday at 3:00 PM
+MTH|254|Calculus IV|An introduction to differential and integral calculus of functions of several variables and applications.|1|Mondays and Tuesdays at 11 AM.
+CS|201|Computer Systems Programming|Introduction to computer systems from a software perspective.|3|Tuesdays at 6 PM
+CS|163|Data Structures|Data abstraction with formal specification.|1|Online course, completed at your own pace thorugh Desire2Learn
+ANTH|330|Anthropology of Folklore|Review of folklore - including legend, folktales, music and dance - and its role in society. Emphasis will be on the study of folklore by anthropologists in both western and non-western contexts. Explores how folklore can reveal social relations, conflict and resistance, social change and gender relations.|1|Tuesdays and Thursdays at 3 PM.
+CS|162|Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|1|Online course, completed at your own pace thorugh Desire2Learn
+ANTH|103|Cultural Anthropology|Study of modern and recent societies in cross cultural perspective. Focus on methods for understanding social and cultural differences and similarities.|1|Wednesday at 3 PM.
+CS|163|Data Structures|Data abstraction with formal specification.|2|In-class course, Monday and Wednesday, 10:00 AM 
+MTH|271|Mathematical Computing|Machine representation of the real number field and its consequences. Elements of error analysis. Introduction to the design, analysis, and stability of algorithms.|1|Monday and Wednesday at 12 PM.
+CS|201|Computer Systems Programming|Introduction to computer systems from a software perspective.|2|Thursdays at 6 PM
+CS|202|Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|3|Tuesday and Thursday at 1:00 PM
+ANTH|363|Egyptian Archaeology|A survey of the archaeological record of Egypt beginning with the earliest evidence of human occupation to the Pyramid era, with an emphasis on the period from 6000 BCE to the end of the Old Kingdom period (ca 2000 BCE). Lectures and readings will focus on how archaeological materials are used to reconstruct events in Egypt's past.|1|Monday at 5 PM.
+CS|162|Introduction to Computer Science|The goals of this class are to teach the syntax of C++ to students who already know how to program.|3|In-class course, Tuesday and Thursday at 8:00 AM.
+CS|201|Computer Systems Programming|Introduction to computer systems from a software perspective.|1|Online course, completed at your own pace thorugh Desire2Learn
+CS|202|Programming Systems|Students will become familiar with the language and operating system environment used in most upper division courses in the Computer Science major curriculum.|1|Online course, completed at your own pace thorugh Desire2Learn
+CS|163|Data Structures|Data abstraction with formal specification.|3|In-class course, Monday and Wednesday, 8:00 AM
+

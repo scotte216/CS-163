@@ -1,0 +1,11 @@
+1|Are you in CS 163?
+2|Are you going to take CS 201?
+3|Are you a CS major?
+4|Who is your favorite TA?
+5|How many stars would you give to TA #1
+6|How many stars would you give to TA #2
+7|How many stars would you give to TA #3
+8|How many stars would you give to TA #4
+9|How many stars would you give the class?
+10|Would you like to take the quiz again?
+11|Thanks for taking the quiz!

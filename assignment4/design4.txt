@@ -1,0 +1,52 @@
+Scott Ewing
+CS 163
+Assignment 4
+Design Write-up
+
+For this assignment we were to take our basic structure from Assignment 3 and
+change it from a hash table to a binary search tree. Thanks to the
+modularization from the previous assignment, I didn't need to modify my
+course_data Class much at all. Also, thanks to this, I barely needed to modify
+my main.cpp -- or user interface. Nearly everything remained the same. The
+differences were contained almost exclusively in the new course_tree Class.
+Previously this was the course_table (for hash-table) Class. I did use this
+opportunity to clean up a few functions, however, as well as adding a few
+additional data fields into the course_data Class, but this was relatively
+simple. 
+
+Implimenting the Binary Search Tree, however, was not trivial, as our data
+structure is much more complicated than the simple int type data we used in our
+lab work. Also, being required to use recursive function pushed me a bit out of
+my comfort-zone, but was valuable experience. Now I feel much more confident
+with the wrapper functions and recursive functions. 
+
+One of the more complex portions of the assignment was dealing with removing a
+node entirely from the BST, due to the number of possible cases, particularly
+the difficult case of finding the in-order successor and moving up to the
+deleted node's location. Making this function recursively was probably the most
+challenging aspect, but I was able to impliment it successfully (with a little
+help from the tutors). 
+
+Also, now that I know how to use Valgrind I was able to more easily identify
+memory leaks and make sure that there were none in my program. This, coupled
+with GDB helped me to track down any segfaults easily and made debugging less
+complicated. 
+
+One issue I was noticing with this assignment was that my argument list was
+growing ever longer for many of my functions. The reason for this was the data
+was private in the course_data Class, so I had to pass things like 'department'
+and 'course_num' in separately. In hindsight, I could have passed in a
+course_details struct which would've had that same information inside but
+packaged in a public way. This could have reduced the number of arguments by up
+to 3 in some cases. 
+
+Overall, the BST was harder to impliment than the Hash Table but allowed for
+sorting of the classes. I did, however, have to randomize the order in which the
+courses were added from the courses.txt file to prevent creating a linear linked
+list instead of a BST. It is important to note that this data structure won't be
+useful for us if our data is pre-sorted (as course data might very well be). 
+
+One detail about my course_data Class structure that I liked was that each
+course has an attached linear linked list of the section it contains, though the
+BST doesn't need to know about this. It can just pass the functionality of
+searching the sections off to the course_data objects. 

@@ -1,0 +1,37 @@
+1|11|No
+1|2|Yes
+2|9|No
+2|3|Yes
+3|9|No
+3|4|Yes
+4|8|TA #4
+4|7|TA #3
+4|6|TA #2
+4|5|TA #1
+5|9|1 Star
+5|9|2 Stars
+5|9|3 Stars
+5|9|4 Stars
+5|9|5 Stars
+6|9|1 Star
+6|9|2 Stars
+6|9|3 Stars
+6|9|4 Stars
+6|9|5 Stars
+7|9|1 Star
+7|9|2 Stars
+7|9|3 Stars
+7|9|4 Stars
+7|9|5 Stars
+8|9|1 Star
+8|9|2 Stars
+8|9|3 Stars
+8|9|4 Stars
+8|9|5 Stars
+9|10|1 Star
+9|10|2 Stars
+9|10|3 Stars
+9|10|4 Stars
+9|10|5 Stars
+10|11|No
+10|1|Yes
